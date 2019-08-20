@@ -1,0 +1,106 @@
+.bannerbox {
+  height: 799px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 1348px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+}
+#swiper {
+  height: 799px;
+  width: 100%;
+  position: relative;
+}
+#swiper .swiper-slide {
+  height: 100%;
+}
+#swiper .swiper-slide > .bannerimg1 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index/banner.png") center no-repeat;
+  position: relative;
+}
+#swiper .swiper-slide > .bannerimg2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index/banner2.png") center no-repeat;
+  position: relative;
+}
+#swiper .swiper-slide > .bannerimg3 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index/banner3.png") center no-repeat;
+  position: relative;
+}
+#swiper .swiper-pagination {
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+#swiper .swiper-pagination .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 12px;
+}
+#swiper .swiper-pagination .swiper-active-switch {
+  background: #ffae2e;
+}
+#swiper .swiper-pagination-clickable .swiper-pagination-bullet {
+  margin-right: 15px;
+}
+#swiper .swiper-pagination-bullet-active {
+  background: #16d1c7;
+  border: 2px solid rgba(22, 209, 199, 0.2);
+}
+#swiper .swiper-button-next,
+.swiper-button-prev {
+  width: 46px;
+  height: 46px;
+}
+#swiper .swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background: url("../img/index/banner-icon1.png") no-repeat;
+  background-size: 46px;
+}
+#swiper .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background: url("../img/index/banner-icon2.png") no-repeat;
+  background-size: 46px;
+}
+/*--------------轮播add--------------*/
+.arrow-left,
+.arrow-right {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 360px;
+  z-index: 999;
+  font-size: 60px;
+}
+.arrow-left > img,
+.arrow-right > img {
+  height: 100%;
+}
+.arrow-left {
+  left: 150px;
+}
+.arrow-right {
+  right: 150px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  cursor: pointer;
+}

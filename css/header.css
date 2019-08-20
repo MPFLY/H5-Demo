@@ -1,0 +1,117 @@
+html,
+body {
+  background: #fff;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #0a0e1a;
+}
+.head {
+  margin: 0 auto;
+  height: 90px;
+  max-width: 1200px;
+  min-width: 869px;
+}
+.head-img {
+  width: 78px;
+  height: 55px;
+  float: left;
+  margin-top: 12px;
+}
+.head-img img {
+  width: 198px;
+  height: 38px;
+  margin-top: 16px;
+}
+.head-list > li:hover::after,
+.head-list > li.active::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #f3f3f3;
+  border-radius: 1.5px;
+  width: 60%;
+  margin: -27px auto;
+}
+.head-list {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*设置为flex布局*/
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  /*水平居中*/
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*垂直居中*/
+}
+.head-list > li {
+  height: 100%;
+  margin-right: 50px;
+  line-height: 90px;
+}
+.head-list > li > a {
+  height: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+}
+.head-user {
+  text-align: center;
+  float: right;
+  margin-top: 25px;
+}
+.head-user > span {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.head-user > span:first-child {
+  color: #3a3a3a;
+  background-color: #ffffff;
+}
+.head-user > span:first-child:hover {
+  color: #39a2fb;
+}
+.head-user > span:nth-child(2) {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.head-user > span:nth-child(2):hover {
+  color: #39a2fb;
+}
+.head-userIE {
+  width: 160px;
+  height: 38px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 20px;
+  margin-top: 26px;
+  float: right;
+  background: #00aae9;
+  background: url(../img/index/linkto.png) no-repeat;
+}
+/* .head-user:hover{
+	background: -webkit-linear-gradient(right, #61b9f9 , #77e4de); 
+    background: -o-linear-gradient(right, #61b9f9, #77e4de); 
+    background: -moz-linear-gradient(right, #61b9f9, #77e4de);
+    background: linear-gradient(to right, #61b9f9 , #77e4de); 
+} */
